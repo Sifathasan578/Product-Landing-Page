@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    color: #1b1b32;
+
+    background-color: #f7f7f9;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/* .section-one {
+    width: 100%;
+    height: 20%;
+} */
+
+/* Header and Header Logo Style  */
+
+#header-img {
+    width: 20vw;
+    height: 50px;
+
+    background-color: #f7f7f9;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+    background-color: #f7f7f9;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    top: 0;
+    position: fixed;
+}
+
+
+
+/* Navigation Style  */
+nav {
+    width: 50%;
+    max-width: 400px;
+    height: 50px;
+}
+nav ul {
+    height: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-inline-start: 0;
+    margin-block: 0;
+}
+nav li {
+    list-style-type: none;
+    color: white;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    /* font-size: medium;  */
+}
+nav li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* Pushing the section two below header and other stuff */
+main {
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+
+
+
+
+/* Form Style  */
+.info {
+    /* parent of input  */
+    /* border: 1px solid red; */
+    display: flex;
+}
+.section-one {
+    height: 200px;
+}
+input {
+    /* border: 3px solid blue; */
+    font-size: 16px;
+    width: 50%;
+    text-align: left;
+    margin: 10px auto;
+}
+#form-header {
+    text-align: center;
+}
+.button-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    margin-top: 20px;
+}
+
+
+/* Features section style  */
+.section-two div {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.section-two div:last-of-type {
+    margin-bottom: 70px;
+}
+
+.section-three div {
+    margin: 20px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.section-four {
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-four div {
+    margin: 10px;
+    width: 180px;
+    height: 250px;
+    border: 1px solid black; 
+}
+
+.price-tag-header-price {
+    width: 100%;
+    height: 15%;
+    background-color: #ddd;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bolder;
+    position: fix;
+}
+
+.price-tag {
+    text-align: center;
+}
+.price-tag h3 {
+    margin-top: 30px;
+}
+
+.price-tag p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.button-one {
+    margin-top: 20px;
+    padding: 5px 12px 3px 12px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    width: 150px;
+
+    background-color: #f1c40f;
+}
+
+.button-one:hover {
+    background-color: #d4ad0a;
+}
+
+.button-two {
+    margin-top: 20px;
+    padding: 3px 10px 3px 10px;
+    font-weight: bold;
+
+    background-color: #f1c40f;
+}
+
+.button-two:hover {
+    background-color: #d4ad0a;
+}
+
+footer {
+    text-align: right;
+}
+
+footer p {
+    font-size: 12px;
+    color: #444;
+}
+
+footer a {
+    margin: 0 3px;
+    text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    /* Clicking on the navigation links should jump the viewport to the relevant section. However, this jumping can be disorienting for some users. To fix this: */
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
